@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: netshoot 
+  labels:
+    name: netshoot 
+spec:
+  containers:
+  - name: netshoot 
+    image: nicolaka/netshoot
+    command:
+      - "/bin/bash"
+    args:
+      - "-c"
+      - "while true;do sleep 2; echo sleep; done"
+    resources:
+      limits:
+        memory: "128Mi"
+        cpu: "0.1"
