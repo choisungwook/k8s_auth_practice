@@ -5,7 +5,7 @@ metadata:
   labels:
     name: netshoot-with-sa 
 spec:
-  serviceAccount: default
+  serviceAccount: test-a
   containers:
   - name: netshoot-with-sa 
     image: nicolaka/netshoot
